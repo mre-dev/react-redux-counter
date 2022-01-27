@@ -5,10 +5,10 @@ const counterReducer = (counter = 0, action) => {
         case 'DECREMENT':
             return counter - 1;
         case "RESET":
-            return (counter = 0);
+            return counter = 0;
         default:
             return counter;
     }
 };
 
-export default counterReducer;
+export { counterReducer };
